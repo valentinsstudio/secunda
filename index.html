@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Art Studio</title>
+    <title>Мой сайт-визитка</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             height: 100vh;
-            background-color: #fff;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
             position: relative;
         }
-
+        .container {
+            position: relative;
+            display: inline-block;
+        }
         img {
-            max-width: 80%;
+            max-width: 100%;
             height: auto;
         }
-
-        .email {
+        .email-link {
             position: absolute;
-            bottom: 10%;
-            font-size: 1rem; /* уменьшенный размер */
+            bottom: 10%; /* Сдвигаем ссылку в нижнюю треть экрана */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px; /* Увеличено в 2 раза */
             text-decoration: none;
-            color: black;
-            background: transparent;
+            color: white;
+            padding: 20px; /* Увеличен отступ */
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0); /* Прозрачный фон */
         }
     </style>
 </head>
 <body>
-    <img src="logo.webp" alt="Logo">
-    <a href="mailto:valentins@art-studio.uk" class="email">valentins@art-studio.uk</a>
+    <div class="container">
+        <img src="my-logo.webp" alt="Логотип">
+        <a href="mailto:valentins@art-studio.uk" class="email-link">valentins@art-studio.uk</a>
+    </div>
 </body>
 </html>
